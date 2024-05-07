@@ -13,7 +13,7 @@ from .base import KoyebMethod, KoyebType
 
 
 class ListBranchesModel(
-    KoyebMethod[Error | KgitproxyListBranchesReply | GooglerpcStatus | ErrorWithFields]
+    KoyebMethod[Error | ErrorWithFields | GooglerpcStatus | KgitproxyListBranchesReply]
 ):
     repository_id: str | None
     name: str | None

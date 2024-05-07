@@ -13,7 +13,7 @@ from .base import KoyebMethod, KoyebType
 
 
 class RemoveOrganizationMemberModel(
-    KoyebMethod[Error | GooglerpcStatus | ErrorWithFields | RemoveOrganizationMemberReply]
+    KoyebMethod[Error | ErrorWithFields | GooglerpcStatus | RemoveOrganizationMemberReply]
 ):
     id: str
 

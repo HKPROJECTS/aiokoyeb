@@ -13,7 +13,7 @@ from .base import KoyebMethod, KoyebType
 
 
 class TailLogsModel(
-    KoyebMethod[Error | StreamResultOfLogEntry | GooglerpcStatus | ErrorWithFields]
+    KoyebMethod[Error | ErrorWithFields | GooglerpcStatus | StreamResultOfLogEntry]
 ):
     type: str | None
     app_id: str | None

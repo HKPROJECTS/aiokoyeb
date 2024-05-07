@@ -12,7 +12,7 @@ from aiokoyeb.models import Error, ErrorWithFields, GooglerpcStatus, ListService
 from .base import KoyebMethod, KoyebType
 
 
-class ListServicesModel(KoyebMethod[Error | ListServicesReply | ErrorWithFields | GooglerpcStatus]):
+class ListServicesModel(KoyebMethod[Error | ErrorWithFields | GooglerpcStatus | ListServicesReply]):
     app_id: str | None
     limit: str | None
     offset: str | None

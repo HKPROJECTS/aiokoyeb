@@ -12,7 +12,7 @@ from aiokoyeb.models import GetCatalogInstanceReply, GooglerpcStatus
 from .base import KoyebMethod, KoyebType
 
 
-class GetCatalogInstanceModel(KoyebMethod[GooglerpcStatus | GetCatalogInstanceReply]):
+class GetCatalogInstanceModel(KoyebMethod[GetCatalogInstanceReply | GooglerpcStatus]):
     id: str
 
     @property

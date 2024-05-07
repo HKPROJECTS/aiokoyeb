@@ -13,7 +13,7 @@ from .base import KoyebMethod, KoyebType
 
 
 class HasUnpaidInvoicesModel(
-    KoyebMethod[Error | HasUnpaidInvoicesReply | GooglerpcStatus | ErrorWithFields]
+    KoyebMethod[Error | ErrorWithFields | GooglerpcStatus | HasUnpaidInvoicesReply]
 ):
     @property
     def method(self) -> str:

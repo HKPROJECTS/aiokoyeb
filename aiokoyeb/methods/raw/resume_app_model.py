@@ -12,7 +12,7 @@ from aiokoyeb.models import Error, ErrorWithFields, GooglerpcStatus, ResumeAppRe
 from .base import KoyebMethod, KoyebType
 
 
-class ResumeAppModel(KoyebMethod[ErrorWithFields | GooglerpcStatus | ResumeAppReply | Error]):
+class ResumeAppModel(KoyebMethod[Error | ErrorWithFields | GooglerpcStatus | ResumeAppReply]):
     id: str
 
     @property

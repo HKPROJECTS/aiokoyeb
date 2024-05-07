@@ -12,7 +12,7 @@ from aiokoyeb.models import Error, ErrorWithFields, GooglerpcStatus, ListDomains
 from .base import KoyebMethod, KoyebType
 
 
-class ListDomainsModel(KoyebMethod[Error | ListDomainsReply | GooglerpcStatus | ErrorWithFields]):
+class ListDomainsModel(KoyebMethod[Error | ErrorWithFields | GooglerpcStatus | ListDomainsReply]):
     limit: str | None
     offset: str | None
     types: list[str] | None

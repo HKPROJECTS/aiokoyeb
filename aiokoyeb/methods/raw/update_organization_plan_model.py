@@ -20,11 +20,11 @@ from .base import KoyebMethod, KoyebType
 
 class UpdateOrganizationPlanModel(
     KoyebMethod[
-        GooglerpcStatus
-        | Error
+        Error
+        | ErrorWithFields
+        | GooglerpcStatus
         | UpdateOrganizationPlanReply
         | UpdateOrganizationPlanRequest
-        | ErrorWithFields
     ]
 ):
     id: str

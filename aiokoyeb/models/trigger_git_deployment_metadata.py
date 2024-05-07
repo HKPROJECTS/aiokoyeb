@@ -18,9 +18,7 @@ if TYPE_CHECKING:
 
 
 class TriggerGitDeploymentMetadata(KoyebModel):
-    provider: Optional[TriggerGitDeploymentMetadataProvider] = Field(
-        alias="provider", default=None
-    )
+    provider: Optional[TriggerGitDeploymentMetadataProvider] = Field(alias="provider", default=None)
     repository: Optional[str] = Field(alias="repository", default=None)
     branch: Optional[str] = Field(alias="branch", default=None)
     sha: Optional[str] = Field(alias="sha", default=None)

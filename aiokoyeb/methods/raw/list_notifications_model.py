@@ -13,7 +13,7 @@ from .base import KoyebMethod, KoyebType
 
 
 class ListNotificationsModel(
-    KoyebMethod[Error | NotificationList | GooglerpcStatus | ErrorWithFields]
+    KoyebMethod[Error | ErrorWithFields | GooglerpcStatus | NotificationList]
 ):
     limit: str | None
     offset: str | None

@@ -20,11 +20,11 @@ from .base import KoyebMethod, KoyebType
 
 class GithubInstallationCallbackModel(
     KoyebMethod[
-        GithubInstallationCallbackReply
-        | GooglerpcStatus
-        | GithubInstallationCallbackRequest
-        | Error
+        Error
         | ErrorWithFields
+        | GithubInstallationCallbackReply
+        | GithubInstallationCallbackRequest
+        | GooglerpcStatus
     ]
 ):
     data: GithubInstallationCallbackRequest

@@ -13,7 +13,7 @@ from .base import KoyebMethod, KoyebType
 
 
 class GetPaymentMethodModel(
-    KoyebMethod[Error | GooglerpcStatus | ErrorWithFields | GetPaymentMethodReply]
+    KoyebMethod[Error | ErrorWithFields | GetPaymentMethodReply | GooglerpcStatus]
 ):
     id: str
 

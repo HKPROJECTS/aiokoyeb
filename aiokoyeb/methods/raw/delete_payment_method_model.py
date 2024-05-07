@@ -13,7 +13,7 @@ from .base import KoyebMethod, KoyebType
 
 
 class DeletePaymentMethodModel(
-    KoyebMethod[DeletePaymentMethodReply | GooglerpcStatus | ErrorWithFields | Error]
+    KoyebMethod[DeletePaymentMethodReply | Error | ErrorWithFields | GooglerpcStatus]
 ):
     id: str
 

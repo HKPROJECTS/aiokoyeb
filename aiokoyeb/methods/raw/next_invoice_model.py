@@ -12,7 +12,7 @@ from aiokoyeb.models import Error, ErrorWithFields, GooglerpcStatus, NextInvoice
 from .base import KoyebMethod, KoyebType
 
 
-class NextInvoiceModel(KoyebMethod[Error | NextInvoiceReply | ErrorWithFields | GooglerpcStatus]):
+class NextInvoiceModel(KoyebMethod[Error | ErrorWithFields | GooglerpcStatus | NextInvoiceReply]):
     @property
     def method(self) -> str:
         return "GET"

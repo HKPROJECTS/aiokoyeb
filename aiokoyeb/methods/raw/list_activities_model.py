@@ -12,7 +12,7 @@ from aiokoyeb.models import ActivityList, Error, ErrorWithFields, GooglerpcStatu
 from .base import KoyebMethod, KoyebType
 
 
-class ListActivitiesModel(KoyebMethod[ActivityList | GooglerpcStatus | ErrorWithFields | Error]):
+class ListActivitiesModel(KoyebMethod[ActivityList | Error | ErrorWithFields | GooglerpcStatus]):
     limit: str | None
     offset: str | None
 

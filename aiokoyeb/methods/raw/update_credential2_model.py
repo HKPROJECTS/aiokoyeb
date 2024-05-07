@@ -19,7 +19,7 @@ from .base import KoyebMethod, KoyebType
 
 
 class UpdateCredential2Model(
-    KoyebMethod[UpdateCredentialReply | GooglerpcStatus | Error | Credential | ErrorWithFields]
+    KoyebMethod[Credential | Error | ErrorWithFields | GooglerpcStatus | UpdateCredentialReply]
 ):
     id: str
     update_mask: str | None

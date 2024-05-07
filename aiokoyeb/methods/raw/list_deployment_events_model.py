@@ -13,7 +13,7 @@ from .base import KoyebMethod, KoyebType
 
 
 class ListDeploymentEventsModel(
-    KoyebMethod[Error | GooglerpcStatus | ErrorWithFields | ListDeploymentEventsReply]
+    KoyebMethod[Error | ErrorWithFields | GooglerpcStatus | ListDeploymentEventsReply]
 ):
     deployment_id: str | None
     types: list[str] | None

@@ -20,11 +20,11 @@ from .base import KoyebMethod, KoyebType
 
 class CreatePaymentAuthorizationModel(
     KoyebMethod[
-        GooglerpcStatus
+        CreatePaymentAuthorizationReply
+        | CreatePaymentAuthorizationRequest
         | Error
         | ErrorWithFields
-        | CreatePaymentAuthorizationReply
-        | CreatePaymentAuthorizationRequest
+        | GooglerpcStatus
     ]
 ):
     data: CreatePaymentAuthorizationRequest

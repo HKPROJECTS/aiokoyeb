@@ -12,7 +12,7 @@ from aiokoyeb.models import GooglerpcStatus, ListCatalogInstancesReply
 from .base import KoyebMethod, KoyebType
 
 
-class ListCatalogInstancesModel(KoyebMethod[ListCatalogInstancesReply | GooglerpcStatus]):
+class ListCatalogInstancesModel(KoyebMethod[GooglerpcStatus | ListCatalogInstancesReply]):
     limit: str | None
     offset: str | None
     id: str | None

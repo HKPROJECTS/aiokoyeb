@@ -18,7 +18,7 @@ from .base import KoyebMethod, KoyebType
 
 
 class DeclineOrganizationInvitationModel(
-    KoyebMethod[ErrorWithFields | GooglerpcStatus | DeclineOrganizationInvitationReply | Error]
+    KoyebMethod[DeclineOrganizationInvitationReply | Error | ErrorWithFields | GooglerpcStatus]
 ):
     id: str
     data: dict

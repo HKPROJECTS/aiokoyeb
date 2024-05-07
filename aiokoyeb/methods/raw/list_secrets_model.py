@@ -12,7 +12,7 @@ from aiokoyeb.models import Error, ErrorWithFields, GooglerpcStatus, ListSecrets
 from .base import KoyebMethod, KoyebType
 
 
-class ListSecretsModel(KoyebMethod[Error | ListSecretsReply | ErrorWithFields | GooglerpcStatus]):
+class ListSecretsModel(KoyebMethod[Error | ErrorWithFields | GooglerpcStatus | ListSecretsReply]):
     name: str | None
     limit: str | None
     offset: str | None

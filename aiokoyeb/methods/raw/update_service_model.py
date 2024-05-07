@@ -19,7 +19,7 @@ from .base import KoyebMethod, KoyebType
 
 
 class UpdateServiceModel(
-    KoyebMethod[GooglerpcStatus | Error | UpdateService | UpdateServiceReply | ErrorWithFields]
+    KoyebMethod[Error | ErrorWithFields | GooglerpcStatus | UpdateService | UpdateServiceReply]
 ):
     id: str
     dry_run: bool | None

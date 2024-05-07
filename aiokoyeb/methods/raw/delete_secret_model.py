@@ -12,7 +12,7 @@ from aiokoyeb.models import DeleteSecretReply, Error, ErrorWithFields, Googlerpc
 from .base import KoyebMethod, KoyebType
 
 
-class DeleteSecretModel(KoyebMethod[Error | GooglerpcStatus | ErrorWithFields | DeleteSecretReply]):
+class DeleteSecretModel(KoyebMethod[DeleteSecretReply | Error | ErrorWithFields | GooglerpcStatus]):
     id: str
 
     @property

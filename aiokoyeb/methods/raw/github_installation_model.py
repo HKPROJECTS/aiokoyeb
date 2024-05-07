@@ -20,11 +20,11 @@ from .base import KoyebMethod, KoyebType
 
 class GithubInstallationModel(
     KoyebMethod[
-        GooglerpcStatus
-        | Error
-        | GithubInstallationRequest
-        | GithubInstallationReply
+        Error
         | ErrorWithFields
+        | GithubInstallationReply
+        | GithubInstallationRequest
+        | GooglerpcStatus
     ]
 ):
     data: GithubInstallationRequest

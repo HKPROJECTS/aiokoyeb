@@ -12,7 +12,7 @@ from aiokoyeb.models import Error, ErrorWithFields, GooglerpcStatus, PauseServic
 from .base import KoyebMethod, KoyebType
 
 
-class PauseServiceModel(KoyebMethod[ErrorWithFields | GooglerpcStatus | PauseServiceReply | Error]):
+class PauseServiceModel(KoyebMethod[Error | ErrorWithFields | GooglerpcStatus | PauseServiceReply]):
     id: str
 
     @property

@@ -13,7 +13,7 @@ from .base import KoyebMethod, KoyebType
 
 
 class CreateDomainModel(
-    KoyebMethod[GooglerpcStatus | Error | ErrorWithFields | CreateDomain | CreateDomainReply]
+    KoyebMethod[CreateDomain | CreateDomainReply | Error | ErrorWithFields | GooglerpcStatus]
 ):
     data: CreateDomain
 

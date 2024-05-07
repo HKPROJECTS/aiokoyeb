@@ -12,7 +12,7 @@ from aiokoyeb.models import Error, ErrorWithFields, GetMetricsReply, GooglerpcSt
 from .base import KoyebMethod, KoyebType
 
 
-class GetMetricsModel(KoyebMethod[Error | GetMetricsReply | ErrorWithFields | GooglerpcStatus]):
+class GetMetricsModel(KoyebMethod[Error | ErrorWithFields | GetMetricsReply | GooglerpcStatus]):
     service_id: str | None
     instance_id: str | None
     name: str | None

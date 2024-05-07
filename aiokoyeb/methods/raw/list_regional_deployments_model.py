@@ -13,7 +13,7 @@ from .base import KoyebMethod, KoyebType
 
 
 class ListRegionalDeploymentsModel(
-    KoyebMethod[Error | ListRegionalDeploymentsReply | ErrorWithFields | GooglerpcStatus]
+    KoyebMethod[Error | ErrorWithFields | GooglerpcStatus | ListRegionalDeploymentsReply]
 ):
     deployment_id: str | None
     limit: str | None

@@ -19,7 +19,7 @@ from .base import KoyebMethod, KoyebType
 
 
 class CreateServiceModel(
-    KoyebMethod[GooglerpcStatus | Error | CreateService | ErrorWithFields | CreateServiceReply]
+    KoyebMethod[CreateService | CreateServiceReply | Error | ErrorWithFields | GooglerpcStatus]
 ):
     dry_run: bool | None
     data: CreateService

@@ -20,11 +20,11 @@ from .base import KoyebMethod, KoyebType
 
 class ReviewOrganizationCapacityModel(
     KoyebMethod[
-        GooglerpcStatus
-        | ReviewOrganizationCapacityRequest
-        | ReviewOrganizationCapacityReply
-        | Error
+        Error
         | ErrorWithFields
+        | GooglerpcStatus
+        | ReviewOrganizationCapacityReply
+        | ReviewOrganizationCapacityRequest
     ]
 ):
     data: ReviewOrganizationCapacityRequest

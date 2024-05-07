@@ -13,7 +13,7 @@ from .base import KoyebMethod, KoyebType
 
 
 class CreateAppModel(
-    KoyebMethod[GooglerpcStatus | Error | CreateAppReply | CreateApp | ErrorWithFields]
+    KoyebMethod[CreateApp | CreateAppReply | Error | ErrorWithFields | GooglerpcStatus]
 ):
     data: CreateApp
 

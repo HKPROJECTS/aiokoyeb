@@ -13,7 +13,7 @@ from .base import KoyebMethod, KoyebType
 
 
 class ListInstanceEventsModel(
-    KoyebMethod[Error | GooglerpcStatus | ErrorWithFields | ListInstanceEventsReply]
+    KoyebMethod[Error | ErrorWithFields | GooglerpcStatus | ListInstanceEventsReply]
 ):
     instance_ids: list[str] | None
     types: list[str] | None

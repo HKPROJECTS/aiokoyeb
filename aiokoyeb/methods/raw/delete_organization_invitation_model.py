@@ -18,7 +18,7 @@ from .base import KoyebMethod, KoyebType
 
 
 class DeleteOrganizationInvitationModel(
-    KoyebMethod[Error | DeleteOrganizationInvitationReply | ErrorWithFields | GooglerpcStatus]
+    KoyebMethod[DeleteOrganizationInvitationReply | Error | ErrorWithFields | GooglerpcStatus]
 ):
     id: str
 

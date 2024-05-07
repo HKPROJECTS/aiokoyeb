@@ -13,7 +13,7 @@ from .base import KoyebMethod, KoyebType
 
 
 class ListDeploymentsModel(
-    KoyebMethod[Error | GooglerpcStatus | ErrorWithFields | ListDeploymentsReply]
+    KoyebMethod[Error | ErrorWithFields | GooglerpcStatus | ListDeploymentsReply]
 ):
     app_id: str | None
     service_id: str | None

@@ -20,7 +20,7 @@ from .base import KoyebMethod, KoyebType
 
 class OAuthCallbackModel(
     KoyebMethod[
-        GooglerpcStatus | OAuthCallbackRequest | Error | OAuthCallbackReply | ErrorWithFields
+        Error | ErrorWithFields | GooglerpcStatus | OAuthCallbackReply | OAuthCallbackRequest
     ]
 ):
     data: OAuthCallbackRequest

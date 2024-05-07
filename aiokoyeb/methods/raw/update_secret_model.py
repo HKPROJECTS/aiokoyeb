@@ -13,7 +13,7 @@ from .base import KoyebMethod, KoyebType
 
 
 class UpdateSecretModel(
-    KoyebMethod[GooglerpcStatus | Secret | Error | ErrorWithFields | UpdateSecretReply]
+    KoyebMethod[Error | ErrorWithFields | GooglerpcStatus | Secret | UpdateSecretReply]
 ):
     id: str
     update_mask: str | None

@@ -13,7 +13,7 @@ from .base import KoyebMethod, KoyebType
 
 
 class GetDeploymentModel(
-    KoyebMethod[Error | GooglerpcStatus | ErrorWithFields | GetDeploymentReply]
+    KoyebMethod[Error | ErrorWithFields | GetDeploymentReply | GooglerpcStatus]
 ):
     id: str
 

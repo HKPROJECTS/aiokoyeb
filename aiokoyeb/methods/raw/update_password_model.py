@@ -19,7 +19,7 @@ from .base import KoyebMethod, KoyebType
 
 
 class UpdatePasswordModel(
-    KoyebMethod[LoginReply | GooglerpcStatus | Error | UpdatePasswordRequest | ErrorWithFields]
+    KoyebMethod[Error | ErrorWithFields | GooglerpcStatus | LoginReply | UpdatePasswordRequest]
 ):
     data: UpdatePasswordRequest
 

@@ -20,9 +20,9 @@ from .base import KoyebMethod, KoyebType
 
 class ResendEmailValidationModel(
     KoyebMethod[
-        GooglerpcStatus
-        | Error
+        Error
         | ErrorWithFields
+        | GooglerpcStatus
         | ResendEmailValidationReply
         | ResendEmailValidationRequest
     ]

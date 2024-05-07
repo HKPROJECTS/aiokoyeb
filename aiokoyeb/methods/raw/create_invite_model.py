@@ -13,7 +13,7 @@ from .base import KoyebMethod, KoyebType
 
 
 class CreateInviteModel(
-    KoyebMethod[GooglerpcStatus | Error | InviteUserRequest | ErrorWithFields | Empty]
+    KoyebMethod[Empty | Error | ErrorWithFields | GooglerpcStatus | InviteUserRequest]
 ):
     data: InviteUserRequest
 

@@ -19,7 +19,7 @@ from .base import KoyebMethod, KoyebType
 
 
 class SignupModel(
-    KoyebMethod[LoginReply | GooglerpcStatus | Error | CreateAccountRequest | ErrorWithFields]
+    KoyebMethod[CreateAccountRequest | Error | ErrorWithFields | GooglerpcStatus | LoginReply]
 ):
     data: CreateAccountRequest
 

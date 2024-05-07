@@ -13,7 +13,7 @@ from .base import KoyebMethod, KoyebType
 
 
 class GetGithubInstallationModel(
-    KoyebMethod[Error | GetGithubInstallationReply | GooglerpcStatus | ErrorWithFields]
+    KoyebMethod[Error | ErrorWithFields | GetGithubInstallationReply | GooglerpcStatus]
 ):
     @property
     def method(self) -> str:

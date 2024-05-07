@@ -12,7 +12,7 @@ from aiokoyeb.models import GooglerpcStatus, ListDatacentersReply
 from .base import KoyebMethod, KoyebType
 
 
-class ListDatacentersModel(KoyebMethod[ListDatacentersReply | GooglerpcStatus]):
+class ListDatacentersModel(KoyebMethod[GooglerpcStatus | ListDatacentersReply]):
     @property
     def method(self) -> str:
         return "GET"

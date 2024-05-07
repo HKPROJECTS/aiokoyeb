@@ -18,7 +18,7 @@ from .base import KoyebMethod, KoyebType
 
 
 class ResyncOrganizationModel(
-    KoyebMethod[Error | GooglerpcStatus | ErrorWithFields | KgitproxyResyncOrganizationReply]
+    KoyebMethod[Error | ErrorWithFields | GooglerpcStatus | KgitproxyResyncOrganizationReply]
 ):
     organization_id: str
 

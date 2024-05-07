@@ -20,11 +20,11 @@ from .base import KoyebMethod, KoyebType
 
 class UpsertSignupQualificationModel(
     KoyebMethod[
-        GooglerpcStatus
-        | Error
-        | UpsertSignupQualificationRequest
+        Error
         | ErrorWithFields
+        | GooglerpcStatus
         | UpsertSignupQualificationReply
+        | UpsertSignupQualificationRequest
     ]
 ):
     id: str

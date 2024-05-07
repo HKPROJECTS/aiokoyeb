@@ -20,7 +20,7 @@ from .base import KoyebMethod, KoyebType
 
 class DiscourseAuthModel(
     KoyebMethod[
-        DiscourseAuthRequest | GooglerpcStatus | Error | ErrorWithFields | DiscourseAuthReply
+        DiscourseAuthReply | DiscourseAuthRequest | Error | ErrorWithFields | GooglerpcStatus
     ]
 ):
     data: DiscourseAuthRequest

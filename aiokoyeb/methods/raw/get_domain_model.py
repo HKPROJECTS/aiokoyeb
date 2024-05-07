@@ -12,7 +12,7 @@ from aiokoyeb.models import Error, ErrorWithFields, GetDomainReply, GooglerpcSta
 from .base import KoyebMethod, KoyebType
 
 
-class GetDomainModel(KoyebMethod[Error | GooglerpcStatus | ErrorWithFields | GetDomainReply]):
+class GetDomainModel(KoyebMethod[Error | ErrorWithFields | GetDomainReply | GooglerpcStatus]):
     id: str
 
     @property

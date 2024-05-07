@@ -18,7 +18,7 @@ from .base import KoyebMethod, KoyebType
 
 
 class ListOrganizationInvitationsModel(
-    KoyebMethod[Error | ListOrganizationInvitationsReply | GooglerpcStatus | ErrorWithFields]
+    KoyebMethod[Error | ErrorWithFields | GooglerpcStatus | ListOrganizationInvitationsReply]
 ):
     limit: str | None
     offset: str | None

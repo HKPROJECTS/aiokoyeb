@@ -13,7 +13,7 @@ from .base import KoyebMethod, KoyebType
 
 
 class GetAccountActivitiesModel(
-    KoyebMethod[ActivityList | GooglerpcStatus | ErrorWithFields | Error]
+    KoyebMethod[ActivityList | Error | ErrorWithFields | GooglerpcStatus]
 ):
     limit: str | None
     offset: str | None

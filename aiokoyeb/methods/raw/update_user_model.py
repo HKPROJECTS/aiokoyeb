@@ -20,7 +20,7 @@ from .base import KoyebMethod, KoyebType
 
 class UpdateUserModel(
     KoyebMethod[
-        GooglerpcStatus | Error | UpdateUserRequestUserUpdateBody | ErrorWithFields | UserReply
+        Error | ErrorWithFields | GooglerpcStatus | UpdateUserRequestUserUpdateBody | UserReply
     ]
 ):
     update_mask: str | None

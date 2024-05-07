@@ -12,7 +12,7 @@ from aiokoyeb.models import Error, ErrorWithFields, GetInstanceReply, GooglerpcS
 from .base import KoyebMethod, KoyebType
 
 
-class GetInstanceModel(KoyebMethod[ErrorWithFields | GooglerpcStatus | GetInstanceReply | Error]):
+class GetInstanceModel(KoyebMethod[Error | ErrorWithFields | GetInstanceReply | GooglerpcStatus]):
     id: str
 
     @property

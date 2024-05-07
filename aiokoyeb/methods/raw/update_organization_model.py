@@ -19,7 +19,7 @@ from .base import KoyebMethod, KoyebType
 
 
 class UpdateOrganizationModel(
-    KoyebMethod[Organization | GooglerpcStatus | Error | UpdateOrganizationReply | ErrorWithFields]
+    KoyebMethod[Error | ErrorWithFields | GooglerpcStatus | Organization | UpdateOrganizationReply]
 ):
     id: str
     update_mask: str | None

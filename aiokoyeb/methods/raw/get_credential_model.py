@@ -13,7 +13,7 @@ from .base import KoyebMethod, KoyebType
 
 
 class GetCredentialModel(
-    KoyebMethod[Error | GetCredentialReply | GooglerpcStatus | ErrorWithFields]
+    KoyebMethod[Error | ErrorWithFields | GetCredentialReply | GooglerpcStatus]
 ):
     id: str
 

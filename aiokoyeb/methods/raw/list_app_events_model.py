@@ -13,7 +13,7 @@ from .base import KoyebMethod, KoyebType
 
 
 class ListAppEventsModel(
-    KoyebMethod[Error | ListAppEventsReply | GooglerpcStatus | ErrorWithFields]
+    KoyebMethod[Error | ErrorWithFields | GooglerpcStatus | ListAppEventsReply]
 ):
     app_id: str | None
     types: list[str] | None

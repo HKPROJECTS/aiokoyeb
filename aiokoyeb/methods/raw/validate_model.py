@@ -12,7 +12,7 @@ from aiokoyeb.models import Error, ErrorWithFields, GooglerpcStatus, LoginReply
 from .base import KoyebMethod, KoyebType
 
 
-class ValidateModel(KoyebMethod[Error | LoginReply | GooglerpcStatus | ErrorWithFields]):
+class ValidateModel(KoyebMethod[Error | ErrorWithFields | GooglerpcStatus | LoginReply]):
     id: str
 
     @property

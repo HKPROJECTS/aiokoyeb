@@ -12,7 +12,7 @@ from aiokoyeb.models import Error, ErrorWithFields, GooglerpcStatus, KsearchSear
 from .base import KoyebMethod, KoyebType
 
 
-class SearchModel(KoyebMethod[Error | KsearchSearchReply | GooglerpcStatus | ErrorWithFields]):
+class SearchModel(KoyebMethod[Error | ErrorWithFields | GooglerpcStatus | KsearchSearchReply]):
     query: str | None
 
     @property

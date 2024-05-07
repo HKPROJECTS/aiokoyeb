@@ -12,7 +12,7 @@ from aiokoyeb.models import Error, ErrorWithFields, GooglerpcStatus, UserReply
 from .base import KoyebMethod, KoyebType
 
 
-class GetCurrentUserModel(KoyebMethod[Error | GooglerpcStatus | ErrorWithFields | UserReply]):
+class GetCurrentUserModel(KoyebMethod[Error | ErrorWithFields | GooglerpcStatus | UserReply]):
     @property
     def method(self) -> str:
         return "GET"

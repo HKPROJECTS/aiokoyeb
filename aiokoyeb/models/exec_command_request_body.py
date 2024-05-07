@@ -22,4 +22,4 @@ class ExecCommandRequestBody(KoyebModel):
     command: Optional[list[str]] = Field(alias="command", default=None)
     tty_size: Optional[ExecCommandRequestTerminalSize] = Field(alias="tty_size", default=None)
     stdin: Optional[ExecCommandIO] = Field(alias="stdin", default=None)
-    disableTty: Optional[bool] = Field(alias="disableTty", default=None)
+    disabletty: Optional[bool] = Field(alias="disableTty", default=None)

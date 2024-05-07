@@ -13,7 +13,7 @@ from .base import KoyebMethod, KoyebType
 
 
 class ListCredentialsModel(
-    KoyebMethod[Error | ListCredentialsReply | GooglerpcStatus | ErrorWithFields]
+    KoyebMethod[Error | ErrorWithFields | GooglerpcStatus | ListCredentialsReply]
 ):
     type: str | None
     name: str | None

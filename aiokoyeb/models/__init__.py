@@ -612,7 +612,6 @@ __all__ = [
     "VerifyDockerImageReply",
     "VerifyDockerImageReplyErrCode",
 ]
-
 for _model_name in __all__:
     _model = globals()[_model_name]
 

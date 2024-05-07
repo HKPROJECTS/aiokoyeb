@@ -12,7 +12,7 @@ from aiokoyeb.models import Error, ErrorWithFields, GooglerpcStatus, LoginReply
 from .base import KoyebMethod, KoyebType
 
 
-class NewSessionModel(KoyebMethod[Error | LoginReply | GooglerpcStatus | ErrorWithFields]):
+class NewSessionModel(KoyebMethod[Error | ErrorWithFields | GooglerpcStatus | LoginReply]):
     @property
     def method(self) -> str:
         return "POST"

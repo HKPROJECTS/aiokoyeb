@@ -12,7 +12,7 @@ from aiokoyeb.models import Error, ErrorWithFields, GooglerpcStatus, ManageReply
 from .base import KoyebMethod, KoyebType
 
 
-class ManageModel(KoyebMethod[Error | ManageReply | ErrorWithFields | GooglerpcStatus]):
+class ManageModel(KoyebMethod[Error | ErrorWithFields | GooglerpcStatus | ManageReply]):
     @property
     def method(self) -> str:
         return "GET"

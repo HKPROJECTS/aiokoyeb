@@ -13,7 +13,7 @@ from .base import KoyebMethod, KoyebType
 
 
 class GetSubscriptionModel(
-    KoyebMethod[ErrorWithFields | GooglerpcStatus | GetSubscriptionReply | Error]
+    KoyebMethod[Error | ErrorWithFields | GetSubscriptionReply | GooglerpcStatus]
 ):
     id: str
 

@@ -15,4 +15,4 @@ from .base import KoyebModel
 
 
 class GoogleprotobufAny(KoyebModel):
-    type: Optional[str] = Field(alias="type", default=None)
+    type: Optional[str] = Field(alias="@type", default=None)

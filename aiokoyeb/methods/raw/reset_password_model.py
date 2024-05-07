@@ -20,7 +20,7 @@ from .base import KoyebMethod, KoyebType
 
 class ResetPasswordModel(
     KoyebMethod[
-        GooglerpcStatus | Error | ResetPasswordRequest | ResetPasswordReply | ErrorWithFields
+        Error | ErrorWithFields | GooglerpcStatus | ResetPasswordReply | ResetPasswordRequest
     ]
 ):
     data: ResetPasswordRequest

@@ -12,7 +12,7 @@ from aiokoyeb.models import Error, ErrorWithFields, GetQuotasReply, GooglerpcSta
 from .base import KoyebMethod, KoyebType
 
 
-class GetQuotasModel(KoyebMethod[Error | GetQuotasReply | GooglerpcStatus | ErrorWithFields]):
+class GetQuotasModel(KoyebMethod[Error | ErrorWithFields | GetQuotasReply | GooglerpcStatus]):
     organization_id: str
 
     @property

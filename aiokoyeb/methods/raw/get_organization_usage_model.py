@@ -12,7 +12,7 @@ from aiokoyeb.models import GetOrganizationUsageReply, GooglerpcStatus
 from .base import KoyebMethod, KoyebType
 
 
-class GetOrganizationUsageModel(KoyebMethod[GooglerpcStatus | GetOrganizationUsageReply]):
+class GetOrganizationUsageModel(KoyebMethod[GetOrganizationUsageReply | GooglerpcStatus]):
     starting_time: str | None
     ending_time: str | None
 

@@ -13,7 +13,7 @@ from .base import KoyebMethod, KoyebType
 
 
 class ListOrganizationMembersModel(
-    KoyebMethod[ListOrganizationMembersReply | GooglerpcStatus | ErrorWithFields | Error]
+    KoyebMethod[Error | ErrorWithFields | GooglerpcStatus | ListOrganizationMembersReply]
 ):
     limit: str | None
     offset: str | None

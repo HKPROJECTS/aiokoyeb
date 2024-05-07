@@ -12,7 +12,7 @@ from aiokoyeb.models import Error, ErrorWithFields, GooglerpcStatus, LoginReply
 from .base import KoyebMethod, KoyebType
 
 
-class RefreshTokenModel(KoyebMethod[Error | LoginReply | GooglerpcStatus | ErrorWithFields]):
+class RefreshTokenModel(KoyebMethod[Error | ErrorWithFields | GooglerpcStatus | LoginReply]):
     @property
     def method(self) -> str:
         return "PUT"

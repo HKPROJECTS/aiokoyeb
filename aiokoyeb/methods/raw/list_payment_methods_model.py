@@ -13,7 +13,7 @@ from .base import KoyebMethod, KoyebType
 
 
 class ListPaymentMethodsModel(
-    KoyebMethod[ListPaymentMethodsReply | GooglerpcStatus | ErrorWithFields | Error]
+    KoyebMethod[Error | ErrorWithFields | GooglerpcStatus | ListPaymentMethodsReply]
 ):
     limit: str | None
     offset: str | None

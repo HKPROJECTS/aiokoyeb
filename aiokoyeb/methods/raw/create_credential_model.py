@@ -20,7 +20,7 @@ from .base import KoyebMethod, KoyebType
 
 class CreateCredentialModel(
     KoyebMethod[
-        GooglerpcStatus | Error | ErrorWithFields | CreateCredential | CreateCredentialReply
+        CreateCredential | CreateCredentialReply | Error | ErrorWithFields | GooglerpcStatus
     ]
 ):
     data: CreateCredential

@@ -20,11 +20,11 @@ from .base import KoyebMethod, KoyebType
 
 class CreateOrganizationInvitationModel(
     KoyebMethod[
-        GooglerpcStatus
+        CreateOrganizationInvitationReply
         | CreateOrganizationInvitationRequest
         | Error
-        | CreateOrganizationInvitationReply
         | ErrorWithFields
+        | GooglerpcStatus
     ]
 ):
     data: CreateOrganizationInvitationRequest

@@ -13,7 +13,7 @@ from .base import KoyebMethod, KoyebType
 
 
 class DeleteServiceModel(
-    KoyebMethod[Error | DeleteServiceReply | GooglerpcStatus | ErrorWithFields]
+    KoyebMethod[DeleteServiceReply | Error | ErrorWithFields | GooglerpcStatus]
 ):
     id: str
 

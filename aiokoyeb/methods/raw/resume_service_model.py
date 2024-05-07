@@ -13,7 +13,7 @@ from .base import KoyebMethod, KoyebType
 
 
 class ResumeServiceModel(
-    KoyebMethod[Error | GooglerpcStatus | ErrorWithFields | ResumeServiceReply]
+    KoyebMethod[Error | ErrorWithFields | GooglerpcStatus | ResumeServiceReply]
 ):
     id: str
 

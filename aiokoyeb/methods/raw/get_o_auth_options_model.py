@@ -13,7 +13,7 @@ from .base import KoyebMethod, KoyebType
 
 
 class GetOAuthOptionsModel(
-    KoyebMethod[ErrorWithFields | GooglerpcStatus | GetOAuthOptionsReply | Error]
+    KoyebMethod[Error | ErrorWithFields | GetOAuthOptionsReply | GooglerpcStatus]
 ):
     action: str | None
     metadata: str | None

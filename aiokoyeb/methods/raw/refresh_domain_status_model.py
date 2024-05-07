@@ -13,7 +13,7 @@ from .base import KoyebMethod, KoyebType
 
 
 class RefreshDomainStatusModel(
-    KoyebMethod[RefreshDomainStatusReply | GooglerpcStatus | ErrorWithFields | Error]
+    KoyebMethod[Error | ErrorWithFields | GooglerpcStatus | RefreshDomainStatusReply]
 ):
     id: str
 

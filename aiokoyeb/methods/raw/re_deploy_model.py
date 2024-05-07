@@ -19,7 +19,7 @@ from .base import KoyebMethod, KoyebType
 
 
 class ReDeployModel(
-    KoyebMethod[GooglerpcStatus | RedeployRequestInfo | Error | RedeployReply | ErrorWithFields]
+    KoyebMethod[Error | ErrorWithFields | GooglerpcStatus | RedeployReply | RedeployRequestInfo]
 ):
     id: str
     data: RedeployRequestInfo

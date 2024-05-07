@@ -13,7 +13,7 @@ from .base import KoyebMethod, KoyebType
 
 
 class ListRepositoriesModel(
-    KoyebMethod[KgitproxyListRepositoriesReply | GooglerpcStatus | ErrorWithFields | Error]
+    KoyebMethod[Error | ErrorWithFields | GooglerpcStatus | KgitproxyListRepositoriesReply]
 ):
     name: str | None
     name_search_op: str | None

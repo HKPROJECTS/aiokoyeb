@@ -18,7 +18,7 @@ from .base import KoyebMethod, KoyebType
 
 
 class ListRegionalDeploymentEventsModel(
-    KoyebMethod[Error | ListRegionalDeploymentEventsReply | GooglerpcStatus | ErrorWithFields]
+    KoyebMethod[Error | ErrorWithFields | GooglerpcStatus | ListRegionalDeploymentEventsReply]
 ):
     regional_deployment_id: str | None
     types: list[str] | None

@@ -19,7 +19,7 @@ class CreateAccountRequest(KoyebModel):
     Create new account
     """
 
-    email: Optional[str] = Field(alias="email", default=None)
-    password: Optional[str] = Field(alias="password", default=None)
+    email: str = Field(alias="email", default=None)
+    password: str = Field(alias="password", default=None)
     name: Optional[str] = Field(alias="name", default=None)
     captcha: Optional[str] = Field(alias="captcha", default=None)

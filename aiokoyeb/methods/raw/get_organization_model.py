@@ -13,7 +13,7 @@ from .base import KoyebMethod, KoyebType
 
 
 class GetOrganizationModel(
-    KoyebMethod[Error | GetOrganizationReply | GooglerpcStatus | ErrorWithFields]
+    KoyebMethod[Error | ErrorWithFields | GetOrganizationReply | GooglerpcStatus]
 ):
     id: str
 

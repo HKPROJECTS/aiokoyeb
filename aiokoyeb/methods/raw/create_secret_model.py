@@ -13,7 +13,7 @@ from .base import KoyebMethod, KoyebType
 
 
 class CreateSecretModel(
-    KoyebMethod[GooglerpcStatus | CreateSecret | Error | CreateSecretReply | ErrorWithFields]
+    KoyebMethod[CreateSecret | CreateSecretReply | Error | ErrorWithFields | GooglerpcStatus]
 ):
     data: CreateSecret
 

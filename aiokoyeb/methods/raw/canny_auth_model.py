@@ -19,7 +19,7 @@ from .base import KoyebMethod, KoyebType
 
 
 class CannyAuthModel(
-    KoyebMethod[GooglerpcStatus | Error | ErrorWithFields | CannyAuthRequest | CannyAuthReply]
+    KoyebMethod[CannyAuthReply | CannyAuthRequest | Error | ErrorWithFields | GooglerpcStatus]
 ):
     data: CannyAuthRequest
 

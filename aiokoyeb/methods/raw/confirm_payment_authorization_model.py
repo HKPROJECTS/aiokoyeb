@@ -18,7 +18,7 @@ from .base import KoyebMethod, KoyebType
 
 
 class ConfirmPaymentAuthorizationModel(
-    KoyebMethod[ConfirmPaymentAuthorizationReply | GooglerpcStatus | ErrorWithFields | Error]
+    KoyebMethod[ConfirmPaymentAuthorizationReply | Error | ErrorWithFields | GooglerpcStatus]
 ):
     id: str
     data: dict

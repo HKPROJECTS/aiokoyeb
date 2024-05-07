@@ -12,7 +12,7 @@ from aiokoyeb.models import Error, ErrorWithFields, GooglerpcStatus, LoginReply
 from .base import KoyebMethod, KoyebType
 
 
-class SwitchOrganizationModel(KoyebMethod[Error | LoginReply | GooglerpcStatus | ErrorWithFields]):
+class SwitchOrganizationModel(KoyebMethod[Error | ErrorWithFields | GooglerpcStatus | LoginReply]):
     id: str
     data: dict
 

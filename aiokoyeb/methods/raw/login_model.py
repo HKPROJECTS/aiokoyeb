@@ -13,7 +13,7 @@ from .base import KoyebMethod, KoyebType
 
 
 class LoginModel(
-    KoyebMethod[LoginReply | GooglerpcStatus | Error | LoginRequest | ErrorWithFields]
+    KoyebMethod[Error | ErrorWithFields | GooglerpcStatus | LoginReply | LoginRequest]
 ):
     data: LoginRequest
 

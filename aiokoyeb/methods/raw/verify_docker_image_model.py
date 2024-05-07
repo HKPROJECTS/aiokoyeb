@@ -13,7 +13,7 @@ from .base import KoyebMethod, KoyebType
 
 
 class VerifyDockerImageModel(
-    KoyebMethod[Error | GooglerpcStatus | ErrorWithFields | VerifyDockerImageReply]
+    KoyebMethod[Error | ErrorWithFields | GooglerpcStatus | VerifyDockerImageReply]
 ):
     image: str | None
     secret_id: str | None

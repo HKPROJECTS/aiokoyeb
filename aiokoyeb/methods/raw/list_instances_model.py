@@ -13,7 +13,7 @@ from .base import KoyebMethod, KoyebType
 
 
 class ListInstancesModel(
-    KoyebMethod[Error | ListInstancesReply | GooglerpcStatus | ErrorWithFields]
+    KoyebMethod[Error | ErrorWithFields | GooglerpcStatus | ListInstancesReply]
 ):
     app_id: str | None
     service_id: str | None

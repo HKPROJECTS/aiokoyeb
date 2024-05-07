@@ -13,7 +13,7 @@ from .base import KoyebMethod, KoyebType
 
 
 class ExecCommandModel(
-    KoyebMethod[Error | StreamResultOfExecCommandReply | GooglerpcStatus | ErrorWithFields]
+    KoyebMethod[Error | ErrorWithFields | GooglerpcStatus | StreamResultOfExecCommandReply]
 ):
     id: str | None
     body_command: list[str] | None
