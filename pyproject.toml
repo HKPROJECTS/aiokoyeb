@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "aiokoyeb"
+version = "0.1.0"
+description = ""
+authors = ["Md. Hasibul Kabir <46620128+HasibulKabir@users.noreply.github.com>"]
+readme = "README.md"
+package-mode = true
+packages = [
+    { include = "aiokoyeb", from = "." }
+]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+aiohttp = "^3.9.5"
+pydantic = "^2.7.1"
+
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.4.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.ruff]
+line-length=100
+fix=true
+
+[tool.ruff.lint]
+ignore = ["ANN", "D", "ERA", "UP007", "COM812", "ISC001", "PLR", "A002", "C901", "TCH"]
+select = ["ALL"]
+extend-select = ["I"]
