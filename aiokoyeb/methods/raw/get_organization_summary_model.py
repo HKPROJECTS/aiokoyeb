@@ -23,9 +23,7 @@ class GetOrganizationSummaryModel(
 
     @property
     def uri(self) -> str:
-        return self._url_for(
-            f"/v1/organizations/{self.organization_id}/summary"
-        )
+        return self._url_for(f"/v1/organizations/{self.organization_id}/summary")
 
     @property
     def responses(self) -> dict[str, KoyebType]:

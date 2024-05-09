@@ -21,9 +21,7 @@ class GetQuotasModel(KoyebMethod[Error | ErrorWithFields | GetQuotasReply | Goog
 
     @property
     def uri(self) -> str:
-        return self._url_for(
-            f"/v1/organizations/{self.organization_id}/quotas"
-        )
+        return self._url_for(f"/v1/organizations/{self.organization_id}/quotas")
 
     @property
     def responses(self) -> dict[str, KoyebType]:

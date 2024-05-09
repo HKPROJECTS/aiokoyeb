@@ -28,9 +28,7 @@ class ResyncOrganizationModel(
 
     @property
     def uri(self) -> str:
-        return self._url_for(
-            f"/v1/git/sync/organization/{self.organization_id}"
-        )
+        return self._url_for(f"/v1/git/sync/organization/{self.organization_id}")
 
     @property
     def responses(self) -> dict[str, KoyebType]:

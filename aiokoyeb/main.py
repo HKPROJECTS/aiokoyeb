@@ -6,6 +6,9 @@ from aiokoyeb.methods.raw import KoyebMethod, KoyebType
 
 
 class KoyebAPI(Methods):
+    def __init__(self, api_key: str = ""):
+        self._api_key = api_key
+
     async def __aenter__(self):
         self.session = aiohttp.ClientSession()
         return self
